@@ -4,8 +4,8 @@ using System.Net;
 
 public class ChineseHoliday
 {
-    static string specificHolidayUrl = "http://gameboylv.github.io/chineseholiday/data/{0}.txt";
-    static string specificWorkdayUrl = "http://gameboylv.github.io/chineseholiday/data/{0}_w.txt";
+    static string specificHolidayUrl = "http://gameboylv.github.io/ChineseHoliday/data/{0}.txt";
+    static string specificWorkdayUrl = "http://gameboylv.github.io/ChineseHoliday/data/{0}_w.txt";
     static TimeSpan workStartTime = new TimeSpan(9, 0, 0);
     static TimeSpan workEndTime = new TimeSpan(17, 30, 0);
 
