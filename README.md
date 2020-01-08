@@ -1,5 +1,6 @@
 # ChineseHoliday
 
+仅一个类库，无需装包，无需更新，实时在线查询Github最新数据
 
 ## C#
 
