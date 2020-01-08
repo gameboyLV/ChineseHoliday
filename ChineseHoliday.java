@@ -1,5 +1,3 @@
-package cn.bipark.reco.authorization.service;
-
 import java.net.URI;
 import java.net.http.HttpClient;
 import java.net.http.HttpRequest;
@@ -72,13 +70,13 @@ public class ChineseHoliday {
                 .toArray(LocalDate[]::new);
     }
 
-    public static Boolean IsWorkingDay(LocalDate date) {
+    public static Boolean isWorkingDay(LocalDate date) {
         return !Arrays.asList(getHoliday(date.getYear())).contains(date);
     }
 
-    public static Boolean IsWorkingTime(LocalDateTime dateTime) {
+    public static Boolean isWorkingTime(LocalDateTime dateTime) {
         var date = dateTime.toLocalDate();
         var time = dateTime.toLocalTime();
-        return IsWorkingDay(date) && time.isAfter(workStartTime) && time.isBefore(workEndTime);
+        return isWorkingDay(date) && time.isAfter(workStartTime) && time.isBefore(workEndTime);
     }
 }
